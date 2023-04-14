@@ -1,20 +1,25 @@
-###Before usage run migrations:
+## Usage:
+To test project you can use "Postman".
+In authorisation set BearerToken and provide a token from `/login/` url
+
+### Before usage run migrations:
     $ python manage.py makemigrations threads
     $ python manage.py makemigrations users
     $ python manage.py migrate
 
-###To load test data use:
+### To load test data use:
     $ python manage.py loaddata users_test.json
     $ python manage.py loaddata threads_test.json
     $ python manage.py loaddata messages_test.json
 
-###To run server:
+### To run server:
     $ python manage.py runserver
 
-##URLs and JSONs:
+## URLs and JSONs:
     /admin/
     django admin panel
-###Users:
+
+### Users:
     POST
     /register/
     register a user
@@ -25,14 +30,13 @@
       "password": "Pass1234"
     }
     
-
     POST
     /login/
     login a user
     Same JSON as for /register/
     !!!returns a JWT token to use application!!!
 
-###Threads and Messages:
+### Threads and Messages:
     FOR EVERY REQUEST TOKEN MUST BE PROVIDED!
 
     GET
@@ -61,10 +65,3 @@
     {
         "text": "text of message"
     }
-
-    
-    
-
-##Usage:
-To test project you can use "Postman".
-In authorisation set BearerToken and provide a token from `/login/` url
