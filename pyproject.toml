@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "simple-chat-test"
+version = "0.1.0"
+description = ""
+authors = ["jeSoosRemirez <dkhomych0091@gmail.com>"]
+readme = "README.md"
+packages = [{include = "simple_chat_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+djangorestframework-simplejwt = "^5.2.2"
+django = "^4.2"
+djangorestframework = "^3.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
