@@ -1,0 +1,35 @@
+[
+  {
+  "model": "threads.Thread",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "header": "First thread",
+    "participants": [1, 2],
+            "created_time": "2022-02-14T14:25:00Z",
+            "edited_date": "2022-02-14T14:35:00Z"
+        }
+    },
+    {
+        "model": "threads.Thread",
+        "pk": 2,
+        "fields": {
+            "owner": 2,
+            "header": "Second thread",
+            "participants": [1],
+            "created_time": "2022-02-14T14:40:00Z",
+            "edited_date": "2022-02-14T14:40:00Z"
+        }
+    },
+    {
+        "model": "threads.Thread",
+        "pk": 3,
+        "fields": {
+            "owner": 1,
+            "header": "Third thread",
+            "participants": [2],
+            "created_time": "2022-02-14T14:45:00Z",
+            "edited_date": "2022-02-14T14:45:00Z"
+        }
+    }
+]
